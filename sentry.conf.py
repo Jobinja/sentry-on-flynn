@@ -270,3 +270,5 @@ BITBUCKET_CONSUMER_SECRET = os.environ.get('BITBUCKET_CONSUMER_SECRET')
 # If this file ever becomes compromised, it's important to regenerate your SECRET_KEY
 # Changing this value will result in all current sessions being invalidated
 SENTRY_OPTIONS['system.secret-key'] = os.environ['SECRET_KEY']
+
+SENTRY_DIGESTS = 'sentry.digests.backends.redis.RedisBackend'
